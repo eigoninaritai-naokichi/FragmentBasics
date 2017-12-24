@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FragmentBasics</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reporting_elapsed_task_channel_name">タスク期限報告チャンネル</string>
+    <string name="time_limit_cancel">Time Limit Cancel</string>
+    <string name="time_limit_setting">Time Limit Set</string>
+    <string name="action_search">Search</string>
+    <string name="action_sort">並び替え</string>
+    <string name="action_alarm">Alarm</string>
+</resources>

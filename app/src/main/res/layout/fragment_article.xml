@@ -1,0 +1,58 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eigoninaritai.fragmentbasics.ArticleFragment">
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Spinner"
+        android:id="@+id/date_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/time_picker"
+        app:layout_constraintBottom_toTopOf="@id/time_limit_setting_button"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <Button
+        style="@style/Base.Widget.AppCompat.Spinner"
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/date_picker"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/time_limit_setting_button" />
+
+    <Button
+        android:id="@+id/time_limit_setting_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_picker"
+        app:layout_constraintRight_toLeftOf="@+id/time_limit_cancel_button"
+        app:layout_constraintBottom_toTopOf="@id/article"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:text="@string/time_limit_setting" />
+
+    <Button
+        android:id="@+id/time_limit_cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/time_limit_setting_button"
+        app:layout_constraintBaseline_toBaselineOf="@id/time_limit_setting_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/article"
+        android:text="@string/time_limit_cancel" />
+
+    <EditText
+        android:id="@+id/article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_limit_setting_button"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
