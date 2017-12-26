@@ -1,5 +1,6 @@
 package com.eigoninaritai.fragmentbasics
 
+
 /**
  * ダミーの記事情報クラス。
  */
