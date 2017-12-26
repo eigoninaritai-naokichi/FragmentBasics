@@ -19,12 +19,12 @@ class ReportingElapsedTaskBroadcastReceiver : BroadcastReceiver() {
         /**
          * 期限を経過したタスクをユーザーに通知するブロードキャストレシーバーのチャンネルID。
          */
-        val REPORT_ELAPSED_TASK_CHANNEL: String = "com.eigoninaritai.frowtask.ReportingElapsedTaskBroadcastReceiver"
+        val REPORT_ELAPSED_TASK_CHANNEL: String = "com.eigoninaritai.flowtask.ReportingElapsedTaskBroadcastReceiver"
 
         /**
          * タスクテーブルを引数として示す識別子。
          */
-        val ARG_TASK: String = "com.eigoninaritai.frowtask.ARG_TASK"
+        val ARG_TASK: String = "com.eigoninaritai.flowtask.ARG_TASK"
     }
 
     /**
